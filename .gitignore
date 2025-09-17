@@ -1,15 +1,30 @@
-.env/
+# Arquivos de ambiente
+.env
 
+# Python cache e compilados
 __pycache__/
-*.pyc
+*.py[cod]
 *.pyo
 *.pyd
-*.db
 
+# Banco de dados locais
+*.db
+*.sqlite3
+*.db-journal
+
+# IDEs e editores
 .vscode/
 .idea/
+*.sublime-project
+*.sublime-workspace
 
+# Logs
 *.log
 
+# Arquivos do sistema
 .DS_Store
 Thumbs.db
+
+# Virtual environments (caso crie futuramente)
+venv/
+env/
