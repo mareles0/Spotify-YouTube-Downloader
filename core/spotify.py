@@ -1,4 +1,3 @@
-# core/spotify.py
 import os
 import shutil
 import spotipy
@@ -102,8 +101,7 @@ def spotify_download_playlist(url, download_path, prog_bar, prog_label):
         except Exception as e:
             # mostra no console, pula a música
             print(f"Spotify: Erro ao baixar '{track}': {e}")
-
-    # opcional: compactar (mantive o comportamento)
+   
     try:
         shutil.make_archive(os.path.join(download_path, "playlist_download"), 'zip', download_path)
     except Exception:

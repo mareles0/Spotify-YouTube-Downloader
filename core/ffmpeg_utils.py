@@ -1,4 +1,3 @@
-# core/ffmpeg_utils.py
 import subprocess
 import sys
 import os

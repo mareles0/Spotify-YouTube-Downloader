@@ -1,21 +1,15 @@
-# Ambientes virtuais
-venv/
 .env/
 
-# Compilados Python
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 *.db
 
-# IDEs
 .vscode/
 .idea/
 
-# Logs
 *.log
 
-# Arquivos temporários
 .DS_Store
 Thumbs.db

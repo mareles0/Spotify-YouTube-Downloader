@@ -1,4 +1,3 @@
-# core/youtube.py
 import os
 import yt_dlp
 from tkinter import messagebox
@@ -139,9 +138,6 @@ def download_youtube_video(url, download_path, fmt, res, dl_prog_bar, dl_prog_la
                     messagebox.showinfo("Interrompido", "YouTube: Upscaling interrompido pelo usuário.")
                     return
                 else:
-                    messagebox.showerror("Erro", f"Upscaling falhou: {result}")
-                    # não abortamos o loop inteiro — você pode decidir diferente
-                    # continue para o próximo item da playlist
-    # fim loop entries
+                    messagebox.showerror("Erro", f"Upscaling falhou: {result}")                   
 
     messagebox.showinfo("Concluído", "YouTube: Download(s) concluído(s)!")
