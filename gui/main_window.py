@@ -11,7 +11,7 @@ import core.utils as utils
 class DownloaderApp:
     def __init__(self, root):
         self.root = root
-        self.root.title("🎧 Downloader Multi-Modal")
+        self.root.title("🎧 Downloader YouTube & Spotify")
         self.root.geometry("980x700")
 
         self.default_download_dir = os.path.join(os.path.expanduser("~"), "Downloads")
