@@ -1,4 +1,3 @@
-# gui/main_window.py
 import customtkinter as ctk
 from tkinter import filedialog, messagebox
 import threading
@@ -30,7 +29,7 @@ class DownloaderApp:
         self.create_spotify_ui(self.spotify_tab)
         self.create_youtube_ui(self.youtube_tab)
 
-    # ---------------- Spotify ----------------
+
     def create_spotify_ui(self, frame):
         self.spotify_url = ctk.CTkEntry(frame, placeholder_text="URL do Spotify (playlist ou track)")
         self.spotify_url.pack(pady=8, fill="x", padx=20)
@@ -80,7 +79,7 @@ class DownloaderApp:
 
         threading.Thread(target=run, daemon=True).start()
 
-    # ---------------- YouTube ----------------
+
     def create_youtube_ui(self, frame):
         self.youtube_url = ctk.CTkEntry(frame, placeholder_text="URL do YouTube (vídeo ou playlist)")
         self.youtube_url.pack(pady=8, fill="x", padx=20)
