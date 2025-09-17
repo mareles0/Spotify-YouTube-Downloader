@@ -1,5 +1,5 @@
 import customtkinter as ctk
-from gui.main_windown import DownloaderApp
+from gui.main_window import DownloaderApp
 from dotenv import load_dotenv
 
 if __name__ == "__main__":
